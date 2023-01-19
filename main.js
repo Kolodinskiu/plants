@@ -1,7 +1,20 @@
 
+let menus = document.querySelector(".navbar");
+let menus_btn = document.querySelector(".menu-btn");
+let close_btn = document.querySelector(".close-btn");
+
+menus_btn.addEventListener("click", function () {
+  menus.classList.add("active2");
+});
+
+close_btn.addEventListener("click", function () {
+  menus.classList.remove("active2");
+});
+
+
 const btn = document.querySelector('.service-info__btn');
 const items = document.querySelectorAll('.service-lable_item');
-const btnItems = document.querySelectorAll('.btn');
+const btnItems = document.querySelectorAll('.service-btn');
 
 function filter() {
 	btn.addEventListener('click', event => {
